@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Centro de Ayuda | ContApp
+  </title>
+
+  <!-- FONTS -->
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+  <main class="main">
+<a href="https://join.contapp.ec/" target="_blank" class="pill-btn">
+  Ingresar a la App
+</a>
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+        <h1>Guía interactiva</h1>
+        <p>Tutoriales rápidos y sencillos para aprovechar todas las funciones de ContApp.</p>
+
+      </div>
+
+      <!-- SEARCH -->
+
+      <div class="search-container">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar tutorial...">
+
+      </div>
+
+    </section>
+
+    <!-- CATEGORÍAS -->
+
+    <section class="help-categories">
+
+      <!-- Tour de Bienvenida -->
+
+      <div
+        class="help-card"
+        onclick="loadArticle('tour')">
+
+        <div class="help-icon">
+          🚀
+        </div>
+
+        <div class="help-content">
+
+          <h3>
+            Tour inicial por ContApp
+          </h3>
+
+          <p>
+           En este recorrido rápido te mostraremos dónde encontrar las principales funciones y cómo navegar fácilmente.
+          </p>
+
+        </div>
+
+      </div>
+
+<!-- FIRMA -->
+
+      <div
+        class="help-card"
+        onclick="loadArticle('firma-electronica')">
+
+        <div class="help-icon">
+          🔐
+        </div>
+
+        <div class="help-content">
+
+          <h3>
+            Firma electrónica
+          </h3>
+
+          <p>
+            Guía para cargar tu firma electrónica de forma rápida y sencilla.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- FACTURACIÓN RÁPIDA -->
+
+      <div
+        class="help-card"
+        onclick="loadArticle('factura-datil')">
+
+        <div class="help-icon">
+          ⚡
+        </div>
+
+        <div class="help-content">
+
+          <h3>
+            Facturación rápida
+          </h3>
+
+          <p>
+            Factura tus servicios recurrentes de manera rápida y sin complicaciones.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- FACTURACIÓN AVANZADA -->
+
+      <div
+        class="help-card"
+        onclick="loadArticle('factura-datil')">
+
+        <div class="help-icon">
+          📋
+        </div>
+
+        <div class="help-content">
+
+          <h3>
+            Facturación Avanzada
+          </h3>
+
+          <p>
+            Accede a un flujo completo de facturación con configuraciones avanzadas para mayor control, ideal para quienes manejan inventario
+          </p>
+
+        </div>
+
+      </div>
+
+      <!--Instalacion Android -->
+
+      <div
+        class="help-card"
+        onclick="loadArticle('factura-datil')">
+
+        <div class="help-icon">
+          📲
+        </div>
+
+        <div class="help-content">
+
+          <h3>
+            Instala ContApp en tus dispositivos
+        </h3>
+
+          <p>
+Instala ContApp en iOS y Android  para gestionar tu contabilidad desde cualquier lugar de forma fácil, rápida y segura.
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTENIDO -->
+
+    <section
+      class="article hidden"
+      id="articleContainer">
+
+    </section>
+
+  </main>
+
+  <!-- JS -->
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

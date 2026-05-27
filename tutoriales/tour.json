@@ -1,0 +1,33 @@
+{
+        "type": "video-only",
+        
+        "breadcrumb":
+          "Inicio / Tour inicial por ContApp",
+
+        "title":
+          "Tour inicial por ContApp",
+
+        "description":
+          "Descubre todo lo que puedes hacer con la nueva App de ContApp",
+
+        "video":
+          "https://www.youtube.com/embed/q_i4w4Aq13Q?si=QEH6tva2PxS2LrCI",
+
+        "steps": [       
+
+          {
+            "title":
+              "Haz clic en Nueva factura",
+
+            "text":
+              "Presiona el botón Nueva factura.",
+
+            "video":
+              "videos/nueva-factura.mp4"
+          }
+
+        ],
+
+        "tip":
+          "Verifica que tu firma electrónica esté activa."
+      }

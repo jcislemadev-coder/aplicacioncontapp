@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --primary: #7B3652;
+  --primary-light: #A84F72;
+
+  --background: #FAF5F0;
+
+  --white: #ffffff;
+
+  --dark: #1C1E29;
+
+  --text: #6b7280;
+
+  --border: #ece7e3;
+}
+
+/* BODY */
+
+body {
+
+  font-family: 'Inter', sans-serif;
+
+  background: var(--background);
+
+  color: #2d2d2d;
+}
+
+/* MAIN */
+
+.main {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 20px 6px 10px;
+}
+
+/* HERO */
+
+.hero {
+
+  background: linear-gradient(
+    135deg,
+    #7B3652,
+    #A84F72
+  );
+
+  padding: 20px 25px;
+
+  border-radius: 26px;
+
+  color: white;
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.hero-badge {
+
+  display: inline-block;
+
+  background: rgba(255,255,255,0.14);
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: rgba(255,255,255,0.85);
+}
+
+/* SEARCH */
+
+.search-container {
+
+  margin-top: 40px;
+}
+
+.search-container input {
+
+  width: 100%;
+
+  max-width: 550px;
+
+  padding: 20px 24px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+/* HELP CATEGORIES */
+
+.help-categories {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+
+  margin-bottom: 60px;
+}
+
+/* CARD */
+
+.help-card {
+  background: white;
+  border-radius: 28px;
+  padding: 28px;
+
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  border: 1px solid var(--border);
+
+  /* necesario para el efecto */
+  position: relative;
+  overflow: hidden;
+}
+
+/* fondo que se “pinta” */
+.help-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background:   #ffbdfc2b;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.35s ease;
+
+  z-index: 0;
+}
+
+/* hover: se pinta */
+.help-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* mantiene contenido encima del fondo */
+.help-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* hover original (lo puedes mantener o combinar) */
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+
+.help-icon {
+
+  min-width: 90px;
+  height: 90px;
+
+  background: #eef3f7;
+
+  border-radius: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 38px;
+}
+
+/* CONTENT */
+
+.help-content h3 {
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.help-content p {
+
+  color: var(--text);
+
+  line-height: 1.8;
+}
+
+/* ARTICLE */
+
+.article {
+
+  background: white;
+
+  padding: 55px;
+
+  border-radius: 32px;
+}
+
+/* HIDDEN */
+
+.hidden {
+
+  display: none;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+
+  color: var(--primary);
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+
+/* TITLE */
+
+.article h2 {
+
+  font-size: 44px;
+
+  margin-bottom: 16px;
+}
+
+.article-description {
+
+  color: var(--text);
+
+  line-height: 1.8;
+
+  margin-bottom: 40px;
+}
+
+/* MODE */
+
+.tutorial-mode {
+
+  display: flex;
+
+  gap: 16px;
+
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+
+.mode-button {
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  padding: 14px 22px;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.mode-button.active {
+
+  background: linear-gradient(
+    135deg,
+    #7B3652,
+    #A84F72
+  );
+
+  color: white;
+
+  border: none;
+}
+
+/* VIDEO */
+
+.video-box {
+
+  overflow: hidden;
+
+  border-radius: 26px;
+}
+
+.video-box iframe {
+
+  width: 100%;
+
+  height: 520px;
+
+  border: none;
+}
+
+/* STEP */
+
+.step {
+
+  margin-bottom: 60px;
+}
+
+/* NUMBER */
+
+.step-number {
+
+  width: 54px;
+  height: 54px;
+
+  background: linear-gradient(
+    135deg,
+    #7B3652,
+    #A84F72
+  );
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  font-weight: bold;
+}
+
+/* STEP TITLE */
+
+.step h3 {
+
+  font-size: 28px;
+
+  margin-bottom: 14px;
+}
+
+/* STEP TEXT */
+
+.step p {
+
+  color: var(--text);
+
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+}
+
+/* VIDEO STEP */
+
+.step video {
+
+  width: 100%;
+
+  border-radius: 24px;
+
+  border: 1px solid var(--border);
+}
+
+/* TIP */
+
+.tip {
+
+  background: #fff1f2;
+
+  border-left: 5px solid var(--primary);
+
+  padding: 24px;
+
+  border-radius: 20px;
+
+  color: var(--primary);
+
+  font-weight: 600;
+}
+.pill-btn {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+
+  padding: 10px 18px !important;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-light)
+  ) !important;
+
+  color: var(--white) !important;
+
+  border-radius: 999px !important;
+
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  text-decoration: none !important;
+  font-family: 'Inter', sans-serif !important;
+
+  box-shadow: 0 6px 15px rgba(123, 54, 82, 0.25) !important;
+
+  z-index: 99999 !important;
+
+  transition: all 0.2s ease !important;
+}
+
+.pill-btn:hover {
+  transform: scale(1.05) !important;
+  filter: brightness(1.05);
+}
+
+.pill-btn:link,
+.pill-btn:visited {
+  color: var(--white) !important;
+  text-decoration: none !important;
+}
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+  .hero {
+
+    padding: 50px 24px;
+  }
+
+  .hero h1 {
+
+    font-size: 40px;
+  }
+
+  .help-card {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .article {
+
+    padding: 30px 24px;
+  }
+
+  .article h2 {
+
+    font-size: 32px;
+  }
+
+  .video-box iframe {
+
+    height: 260px;
+  }
+.pill-btn {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+
+  padding: 10px 18px !important;
+
+  background-color: #25D366 !important;
+  color: #ffffff !important;
+
+  border-radius: 999px !important;
+
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  text-decoration: none !important; /* QUITA subrayado */
+  font-family: Arial, sans-serif !important;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+
+  z-index: 99999 !important;
+
+  transition: all 0.2s ease !important;
+}
+
+.pill-btn:hover {
+  transform: scale(1.05) !important;
+  background-color: #1ebe5d !important;
+}
+
+/* elimina estilos raros de links visitados */
+.pill-btn:link,
+.pill-btn:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+}
