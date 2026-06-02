@@ -1,12 +1,20 @@
-{
-  "type": "video-only",
+  {
+  "type": "video-and-devices",
 
-  "breadcrumb": "Inicio / Instalación ContApp en tus dispositivos",
+  "breadcrumb": "Inicio / Instalación",
 
-  "title": "ContApp en iOS y Android",
+  "title": "Instala ContApp en tus dispositivos",
 
   "description": "Instala ContApp fácilmente en dispositivos iOS y Android para acceder a todas las funciones desde cualquier lugar, de forma rápida y segura.",
 
-      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  "devices": [
+    {
+      "name": "Dispositivos iOS",
+      "video": "https://www.youtube.com/embed/VIDEO_ID_IOS"
+    },
+    {
+      "name": "Dispositivos Android",
+      "video": "https://www.youtube.com/embed/VIDEO_ID_ANDROID"
+    }
+  ]
 }
